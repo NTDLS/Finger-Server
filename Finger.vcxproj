@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E1627A40-B36D-4EF3-AD74-4949479BB10B}</ProjectGuid>
+    <RootNamespace>Finger</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v90</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v90</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</EmbedManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</EmbedManifest>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Debug/Finger.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_DEBUG_MEMPOOL;_DEBUG_MEMPOOL_ADVANCED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Debug/Finger.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Debug/Finger.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/Finger.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>WS2_32.LIB;WSOCK32.LIB;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>Resources\CommonControls.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Release/Finger.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_DEBUG_MEMPOOL;_DEBUG_MEMPOOL_ADVANCED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Release/Finger.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Release/Finger.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Release/Finger.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>WS2_32.LIB;WSOCK32.LIB;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>Resources\CommonControls.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_Accept.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_ClassProperties.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_ClientProperties.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_ClientThread.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_Command.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_Connect.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_Events.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_Initialize.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_Internal.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_Locks.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_Memory.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_Packetize.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_PumpThread.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_Receive.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_Send.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_StartStop.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_Utilities.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CSocketServer\CSocketServer_WSAInterface.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CStringBuilder\CStringBuilder.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\CTrayIcon\CTrayIcon.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\Debug\Debug.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\NSWFL\NSWFL_Conversion.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\NSWFL\NSWFL_DateTime.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\NSWFL\NSWFL_File.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\NSWFL\NSWFL_KeyGeneration.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\NSWFL\NSWFL_ListBox.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\NSWFL\NSWFL_ListView.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\NSWFL\NSWFL_Math.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\NSWFL\NSWFL_Memory.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\NSWFL\NSWFL_Menu.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\NSWFL\NSWFL_Registry.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\NSWFL\NSWFL_String.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\NSWFL\NSWFL_System.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\NSWFL\NSWFL_Types.Cpp" />
+    <ClCompile Include="..\..\..\%40Libraries\NSWFL\NSWFL_Windows.Cpp" />
+    <ClCompile Include="Source\Entry.Cpp" />
+    <ClCompile Include="Source\Init.Cpp" />
+    <ClCompile Include="Dialogs\MainDlg.Cpp" />
+    <ClCompile Include="Dialogs\NetLogoDlg.Cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\%40Libraries\CSocketServer\CSocketServer.H" />
+    <ClInclude Include="..\..\..\%40Libraries\CStringBuilder\CStringBuilder.H" />
+    <ClInclude Include="..\..\..\%40Libraries\CTrayIcon\CTrayIcon.H" />
+    <ClInclude Include="..\..\..\%40Libraries\Debug\Debug.H" />
+    <ClInclude Include="..\..\..\%40Libraries\NSWFL\NSWFL.h" />
+    <ClInclude Include="..\..\..\%40Libraries\NSWFL\NSWFL_Conversion.H" />
+    <ClInclude Include="..\..\..\%40Libraries\NSWFL\NSWFL_DateTime.H" />
+    <ClInclude Include="..\..\..\%40Libraries\NSWFL\NSWFL_File.H" />
+    <ClInclude Include="..\..\..\%40Libraries\NSWFL\NSWFL_KeyGeneration.H" />
+    <ClInclude Include="..\..\..\%40Libraries\NSWFL\NSWFL_ListBox.H" />
+    <ClInclude Include="..\..\..\%40Libraries\NSWFL\NSWFL_ListView.H" />
+    <ClInclude Include="..\..\..\%40Libraries\NSWFL\NSWFL_Math.H" />
+    <ClInclude Include="..\..\..\%40Libraries\NSWFL\NSWFL_Memory.H" />
+    <ClInclude Include="..\..\..\%40Libraries\NSWFL\NSWFL_Menu.H" />
+    <ClInclude Include="..\..\..\%40Libraries\NSWFL\NSWFL_Registry.H" />
+    <ClInclude Include="..\..\..\%40Libraries\NSWFL\NSWFL_String.H" />
+    <ClInclude Include="..\..\..\%40Libraries\NSWFL\NSWFL_System.H" />
+    <ClInclude Include="..\..\..\%40Libraries\NSWFL\NSWFL_Types.H" />
+    <ClInclude Include="..\..\..\%40Libraries\NSWFL\NSWFL_Windows.H" />
+    <ClInclude Include="Source\Entry.H" />
+    <ClInclude Include="Source\Init.H" />
+    <ClInclude Include="Resources\resource.h" />
+    <ClInclude Include="Dialogs\MainDlg.H" />
+    <ClInclude Include="Dialogs\NetLogoDlg.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="Resources\CommonControls.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\%40Libraries\CSocketServer\Event Handlers.txt" />
+    <None Include="Resources\handcurs.cur" />
+    <None Include="Resources\MainIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\Resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
